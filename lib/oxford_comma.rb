@@ -4,8 +4,16 @@ def oxford_comma(array)
   elsif array.size == 2 
     return array.join(" and ")
   else 
-    array[-1] = "and #{array[-1]}"
-    return array.join(", ")
+    result = ""
+    array.each_with_index do |word, index|
+      result += word
+      if index < array.length - 2
+        result += ", "
+      elsif index == array.length - 2 
+        result += ", and"
+      end 
+    end 
+  result
   end 
 end
 
