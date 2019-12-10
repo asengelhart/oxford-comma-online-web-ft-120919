@@ -10,7 +10,7 @@ def oxford_comma(array)
       if index < array.length - 2
         result += ", "
       elsif index == array.length - 2 
-        result += ", and"
+        result += ", and "
       end 
     end 
   result
