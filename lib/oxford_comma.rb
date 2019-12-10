@@ -8,3 +8,7 @@ def oxford_comma(array)
     return array.join(", ")
   end 
 end
+
+arr = ["foo", "bar", "baz"]
+puts oxford_comma(arr)
+puts arr
